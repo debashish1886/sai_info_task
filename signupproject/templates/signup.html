@@ -1,0 +1,30 @@
+<html>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <center><h2>Create An Account</h2></center>
+    <table align="center" border="2">
+        <tr>
+            <th>UserName</th>
+            <th><input type="text" name="n1"></th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th><input type="email" name="n2"></th>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <th><input type="password" name="n3"></th>
+        </tr>
+        <tr>
+            <th>Confirm Password</th>
+            <th><input type="password" name="n4"></th>
+        </tr>
+        <tr>
+            <th><button type="submit">Signup</button></th>
+        </tr>
+    </table>
+    <center><a href="{% url 'login' %}"><h3>I have already account</h3></a></center>
+</form>
+</body>
+</html>
